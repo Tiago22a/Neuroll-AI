@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neuroll Ai – Automação Inteligente</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .titulo {font-family: 'Montserrat', sans-serif;}
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1s ease-out both',
+            slideUp: 'slideUp 1s ease-out both'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(40px)', opacity: 0 },
+              '100%': { transform: 'translateY(0)', opacity: 1 }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script>module.exports = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Montserrat', 'sans-serif'],  
+        },
+      },
+    },
+    plugins: [],
+  }</script>
+</head>
+
+<body class="bg-gray-950 text-black font-sans">
+  <a href=""
+    class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300"
+    target="_blank" aria-label="Fale no WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M12.04 2.003a9.96 9.96 0 0 0-8.26 15.263L2 22l4.84-1.755a9.96 9.96 0 0 0 5.2 1.43c5.523 0 10-4.477 10-10s-4.477-9.672-10-9.672zm0 18.127a8.01 8.01 0 0 1-4.101-1.124l-.293-.175-2.863 1.038.978-2.976-.193-.307a8.012 8.012 0 1 1 6.472 3.544zm4.402-6.018c-.236-.118-1.394-.687-1.61-.765-.216-.079-.374-.118-.531.118-.157.236-.61.765-.748.923-.138.157-.275.177-.511.059-.236-.118-.996-.366-1.897-1.168-.7-.625-1.173-1.397-1.31-1.633-.138-.236-.015-.364.103-.482.105-.104.236-.275.354-.413.118-.138.157-.236.236-.393.079-.157.04-.295-.02-.413-.059-.118-.531-1.28-.727-1.753-.191-.457-.386-.396-.531-.404l-.452-.008c-.157 0-.413.059-.63.295-.216.236-.827.807-.827 1.97 0 1.162.846 2.283.963 2.438.118.157 1.66 2.528 4.021 3.544.562.242 1.002.386 1.345.494.565.18 1.079.155 1.484.094.453-.068 1.394-.57 1.59-1.12.196-.55.196-1.021.137-1.12-.059-.098-.216-.157-.452-.275z" />
+    </svg>
+  </a>
+  <!-- Header -->
+  <header data-aos="fade-up" data-aos-duration="1000"
+    class="flex justify-between items-center px-6 py-6 max-w-7xl mx-auto">
+    <h1 class="text-2xl font-bold tracking-tight">NeurollAi</h1>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#funcionalidades" class="hover:text-">Funcionalidades</a>
+      <a href="#planos" class="hover:text-">Preços</a>
+      <a href="#" class="hover:text-">Contato</a>
+    </nav>
+    <button class="bg-white text-gray-900 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition">
+      Testar Grátis
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-24 px-4 md:px-0">
+    <div class="titulo">
+    <h2 data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-montserrat md:text-6xl font-extrabold mb-6">
+      Automatize seus fluxos<br> com <span class=" text-yellow-500">inteligência artificial</span>
+    </h2>
+    </div>
+    <p data-aos="fade-up" data-aos-duration="1000" class="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-indigo-700">
+      Economize tempo e aumente a produtividade com automações alimentadas por IA, criadas para o seu negócio.
+    </p>
+    <div class="flex justify-center gap-4">
+      <button onclick="window.location.href=''" data-aos="zoom-in" data-aos-duration="1000"
+        class="bg-green-600 text-black px-6 py-3 rounded-lg font-medium hover:bg-green-800 transition">
+        Começar agora
+      </button>
+      <button data-aos="zoom-in" data-aos-duration="1000"
+        class="border bg-white border-gray-700 px-6 py-3 rounded-lg text-black hover:border-gray-500 transition hover:bg-gray-500 transition">
+        Ver demonstração
+      </button>
+      
+      
+    </div>
+    <br> <br>
+    <p data-aos="zoom-in" data-aos-duration="1000" class="text-red-600 text-2xl font-semibold">Vagas limitadas!</p>
+  </section>
+
+  <!-- sobre -->
+  <section data-aos="fade-up" data-aos-duration="1000" class="bg-gray-900 py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+      <div>
+        <h3 class="text-xl font-semibold text-white mb-2">Automação inteligente</h3>
+        <p class="text-gray-400">Crie fluxos de trabalho que aprendem e se adaptam com o tempo.</p>
+      </div>
+      <div>
+        <h3 class="text-xl text-white font-semibold mb-2">Capture leads</h3>
+        <p class="text-gray-400">Use IA para identificar leads com maior potencial de conversão, com base em
+          comportamento e dados históricos.
+          .</p>
+      </div>
+      <div>
+        <h3 class="text-xl text-white font-semibold mb-2">Contatos</h3>
+        <p class="text-gray-400">Gere contatos qualificados em segundos.</p>
+      </div>
+    </div>
+  </section>
+  <!-- funcionalidades -->
+  <section data-aos="fade-up" data-aos-duration="1000" id="funcionalidades" class="bg-white py-20 text-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl text-black font-bold mb-12">Porque escolher a NeurollAi?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🤖 Automação com IA</h3>
+          <p class="">Crie fluxos que aprendem com cada interação e otimizam processos automaticamente.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🎯 Geração inteligente de leads</h3>
+          <p class="">Encontre os leads mais qualificados com base em dados reais e comportamento do usuário.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">⏱️ Atendimento automático 24/7</h3>
+          <p class="">Ofereça suporte em tempo real com bots inteligentes, sem perder o toque humano.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">📊 Análises e insights</h3>
+          <p class="">Visualize métricas detalhadas e tome decisões baseadas em dados concretos.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🔗 Integrações fáceis</h3>
+          <p class="">Conecte WhatsApp, CRMs, plataformas de e-commerce e muito mais — sem complicação.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">⚡ Agilidade e Escalabilidade</h3>
+          <p class="text-white">Implemente em minutos e escale conforme seu negócio cresce. Sem limites.</p>
+        </div>
+<br><br>
+      </div>
+    </div>
+  </section>
+  <section id="planos" class="text-center items-center">
+    <h2 data-aos="fade-up" data-aos-duration="1000" class="text-3xl md:text-5xl font-bold mb-6"> Planos e preços</h2>
+    <p data-aos="fade-up" data-aos-duration="1000" class="text-gray-800 text-2xl mb-12">Escolha o plano ideal para sua automação com IA.</p>
+    <div class="text-white flex flex-col md:flex-row md:justify-center md:gap-8 gap-8">
+      <!-- Plano Iniciante -->
+      <div class="flex-1 border border-gray-800 bg-gray-900 p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold mb-4">Iniciante</h3>
+        <p class="text-4xl font-bold mb-4">R$0<span class="text-base text-gray-400 font-normal"> /mês</span></p>
+        <ul class="text-left text-gray-400 space-y-2 mb-6">
+          <li>✔️ fluxos automatizados</li>
+          <li>✔️ Acesso ao painel</li>
+          <li>❌ Integrações externas</li>
+          <li>❌ Suporte prioritário</li>
+        </ul>
+        <button class="w-full bg-white text-gray-900 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+          Começar grátis
+        </button>
+      </div>
+
+      <!-- Plano Profissional -->
+      <div class="flex-1 border-2 bg-gray-900 p-8 rounded-2xl shadow-xl scale-105" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold mb-4 text-blue-500">Profissional</h3>
+        <p class="text-4xl font-bold mb-4">R$49<span class="text-base text-gray-400 font-normal"> /mês</span></p>
+        <ul class="text-left text-gray-400 space-y-2 mb-6">
+          <li>✔️ fluxos automatizados</li>
+          <li>✔️ Integrações com APIs</li>
+          <li>✔️ IA personalizada</li>
+          <li>✔️ Suporte via e-mail</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+          Assinar agora
+        </button>
+      </div>
+
+      <!-- Plano Empresarial -->
+      <div class="flex-1 border border-gray-800 bg-gray-900 p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-blue-500 mb-4">Empresarial</h3>
+        <p class="text-4xl font-bold mb-4">R$199<span class="text-base text-gray-400 font-normal"> /mês</span></p>
+        <ul class="text-left text-gray-400 space-y-2 mb-6">
+          <li>✔️ Fluxos ilimitados</li>
+          <li>✔️ Integração total com IA</li>
+          <li>✔️ Treinamento de equipe</li>
+          <li>✔️ Suporte 24/7</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+          Falar com vendas
+        </button>
+      </div>
+      </div>
+  </section>
+  <br><br> <br><br><br><br><br>
+
+  <!-- começar -->
+  <section id="começar" class="text-center py-24 px-4 md:px-0 bg-red-400">
+    <h2 data-aos="fade-up" data-aos-duration="1000" class="text-3xl md:text-5xl font-bold mb-6 ">
+      Pronto para automatizar <br /> seu negócio com IA?
+    </h2>
+    <p data-aos="fade-up" data-aos-duration="1000" class="text-white text-lg font-semibold max-w-xl mx-auto mb-8">
+      Cadastre-se e comece com nosso plano gratuito. Sem cartão de crédito.
+    </p>
+
+    <button data-aos="zoom-in" data-aos-duration="1000"
+      class="bg-white text-gray-900 px-8 py-3 rounded-lg text-lg font-medium hover:bg-gray-400 transition">
+      Criar Conta
+    </button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-10 px-4 md:px-0">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+      <p>© 2025 NeurollAi. Todos os direitos reservados.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-gray-300">Política de Privacidade</a>
+        <a href="#" class="hover:text-gray-300">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
